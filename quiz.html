@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="./quiz.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MCQ Quiz</title>
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+                 
+                 </head>
+                 <body>
+                              <!-- start screen -->
+  <div class="start-screen">
+          <!-- information Section -->
+          <div class="csection1">
+                 <div><img id="logo" src="./testbooklogo.png" alt="testbook-logo"></div>
+                 <div><h1 id="demo">Hello user!</h1></div>
+                 <div><h3>Enter your name to continue the Quiz.</h3></div>
+                 <div>
+                
+                   <form>
+                           Name: <input type="text" id="input-user-name" name="fname" required>
+                          
+                   </form>
+                 </div>
+                 <div><p>You will have 300 second to answer each questions</p></div>        
+          </div>
+          <hr>
+          <!-- question selection section -->
+          <div class="csection2">
+                  <div><h1>Select category</h1></div>
+                  <div>
+                    <form>
+                             <input type="button"  id="Pipe-And-Cisterns" name="option"  value="Pipe And Cisterns">
+                             <input type="button" id="Probability" name="option" value="Probability">
+                             <input type="button" id="Problem-On-Ages" name="option" value="Problem On Ages">
+                             <input type="button" id="Profit-And-Loss" name="option" value="Profit And Loss">
+                       </form>
+                 </div>       
+          </div>
+  </div>
+                   <div id="display-container">
+                              <div id="heading"></div>
+                     <div class="header">
+                              <div class="timer-div">
+                                  <span class="time-left">0s</span>
+                              </div>
+                       <div class="number-of-count">
+                         <span class="number-of-question">1/10 </span>
+                       </div>
+                       <div class="number-of-curr-question">
+                              <span id="curr-question">0</span>
+                            </div>
+                     </div>
+                     <div id="container">
+                      <p class="question"></p>
+                       <!-- questions and options will be displayed here -->
+                     </div>
+                     <button id="next-button">Next</button>
+                   </div>
+                   <div class="score-container hide">
+                     <div id="user-score">Demo Score</div>
+                     <button id="restart">Restart</button>
+                     <button id="back-home" onclick="location.reload()">Back to Home</button>
+                   </div>
+                   
+                   <!-- Script -->
+                   
+                   <script src="quiz1.js"></script>
+                  
+</body>
+</html>
